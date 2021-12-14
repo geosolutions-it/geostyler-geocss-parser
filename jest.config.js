@@ -9,5 +9,6 @@ module.exports = {
   "testRegex": "/src/.*\\.spec.(ts|js)$",
   "collectCoverageFrom": [
     "src/*.ts"
-  ]
+  ],
+  "testEnvironment": "jsdom"
 };

@@ -1,5 +1,5 @@
 {
-  "name": "geostyler-geocss-parser",
+  "name": "@geosolutions/geostyler-geocss-parser",
   "version": "1.0.0",
   "description": "GeoStyler Style Parser implementation for GeoCSS",
   "main": "build/dist/GeoCSSStyleParser.js",
@@ -25,9 +25,9 @@
   },
   "homepage": "https://github.com/geostyler/geostyler-geocss-parser#readme",
   "dependencies": {
-    "flat-geo-css": "^1.0.5",
+    "flat-geo-css": "^1.0.6",
     "geostyler-style": "^2.0.0",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.21"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json && npm run build:browser",
@@ -38,8 +38,7 @@
     "prepublishOnly": "npm run build",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "lint": "tslint --project tsconfig.json --config tslint.json && tsc --noEmit --project tsconfig.json",
-    "release": "np --no-yarn && git push https://github.com/geostyler/geostyler-geocss-parser.git master --tags"
+    "lint": "tslint --project tsconfig.json --config tslint.json && tsc --noEmit --project tsconfig.json"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -48,18 +47,18 @@
     "@babel/polyfill": "^7.4.4",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-typescript": "^7.3.3",
-    "@types/jest": "^24.0.18",
+    "@types/jest": "^27.0.3",
     "@types/lodash": "^4.14.138",
     "@types/node": "^12.7.3",
     "@types/xml2js": "^0.4.4",
-    "babel-jest": "^24.9.0",
+    "babel-jest": "^27.4.5",
     "coveralls": "^3.0.6",
-    "jest": "^24.9.0",
-    "np": "^5.0.3",
+    "jest": "^27.4.5",
+    "np": "^7.6.0",
     "ts-loader": "^6.0.4",
     "tslint": "^5.19.0",
     "typescript": "^3.6.2",
-    "webpack": "^4.39.3",
-    "webpack-cli": "^3.3.7"
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
   }
 }
